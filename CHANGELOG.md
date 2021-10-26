@@ -1,262 +1,105 @@
-This is the Changelog. Please list changes here so that we can provide meaningful changelog for the application stores.
-
-3.6.0
-- Eco-Score
-- Display all 3 scores in search, facets, recent changes
-- Display Eco-Score official logo in history
-- Stability fixes
-- Attributes system
-- Allow to select packaging image from Photos tab
-
-3.5.0
-- New: Help collect photos of recycling and packaging information ! Go to the new Environment tab on the complete product page. This will be helpful to compute the new environmental grade Eco-Score.
-- New button to take additional photos of the product (useful to get more blue questions)
-- Complete fix for Android 7. Sorry about that :-)
-- Producers: you can send necessary product information in advance of the launch of the Eco-Score thanks to https://world.pro.openfoodfacts.org
-
-3.4.3
-- Dark mode: lighter on your eyes, lighter on your battery
-
-3.3
-- Adding or editing a product is now instant in every condition, offline, online or bad connexion.
-- You now are properly credited for your answers to blue questions
-- Faster loading when you click a value on a product (like a brand)
-- Many internal parts of the app were updated, resulting in increased reliability
-- The synchronisation system has been improved
-- Improvements in editing (you can type serving with the numeric keyboard, Nutrients are sorted in alphabetical order)
-- Products to be completed is now real time
-- Removed the Home Gesture in scan. Notifications are not yet easily accessible.
-- OBF improvements
-- Illustrations
-
-3.2.8
-
-- NEW: you can now see the vegan, vegetarian and palm oil status of products, based on their ingredient list. More analysis will be added over time. Send us a mail to tell us what you'd like to see :-)
-- Housecleaning with fixes for several issues that you reported to contact@openfoodfacts.org
-- Alert for alcoholic drinks
-- Clearer addition card
-
-3.2.5
-
-- Add support for ingredient detection
-
-3.2.3
-
-- use a dedicated url for static resources (#2799)
-
-- Fix #2613
-
-- Fix static url for image
-
-X.X.X
-
-X.X.X
-- Fix for that nasty opening bug. Sorry about that.
-- Fix "Don't allow user to create multiple product lists with same name" (#2512)
-
-To get a pardon, we threw in additional fixes:
-- Better looking profile picture
-- Book detection, using the infamous Bookland barcode prefixes
-- Progess indicator when loading (but honestly, we now load so fast you'll barely see them)
-- Indicator of how many offline products you need to send
-- Disabled search option in offline edit,allergen alert
-- Added Terms Of use
-- Ensure Nutriscore in Search and History are disabled for OBF and OPFF
-- Fix add photo not clickable in no results screen (#1071)
-- Moar translations :)
-- Migrate to a recent version of MaterialDialog
-
-0.8.3 - Mar 1
-
-- New option in settings to donate to the Open Food Facts association.
-- Updated History and Product search UI
-- Add weight and brand in the offline product list
-- Charts, maps and advanced search in the side menu. Still a bit rough around the edges, but VERY powerful.
-- Fixed bug that prevented loading Serbian
-- We killed a couple of annoying popups to replace them by something less intrusive.
-- You can now crop and rotate product images before sending them.
-- Made the allergen detector more aggressive.
-- The app has a better offline experience.
-- Better first use experience
-- New Lite API: we divided the data downloaded by 10 to 100, according to the scenarii.
-
-
-0.8.1 - 24 Feb
-
-
-
-
-0.8 - 16 Feb
-
-
-
-
-** Onboarding **
-- Added onboarding screens
-
-** Translations **
-- New full or partial support for Serbian (Latin), Afrikaans, Akan, Amharic, Assamese, Chinese Traditional, Chinese Traditional (Hong Kong), Hungarian, Turkish, Indonesian, Tagalog, Filipino, Dutch, Belgium, Bengali, Slovenian, Kurdish, Esperanto, Polish.
-- Some languages were not working (eg Brazilian Portuguese). This has been fixed. We're also laying some bases for upcoming locale improvements.
-
-** Product View **
-- We now also display the Common name of the product. Nutella in French is also known as "Pâte à tartiner aux noisettes et au cacao"
-- Fix a crasher on the ingredient list, some encoding issues in product fields and typos (pH).
-
-** Contributing **
-- Message to tell you that only 1 photo is required to add a product (though more are welcome :-)
-- Images were uploaded in low-res. We've increased the upload resolution a bit so that they can be legible and useful.
-- You are now properly credited for uploaded images.
-- Add option to add a product if there are no search results
-
-** Open Pet Food Facts **
-- Open Pet Food Facts support. Woof. Woof.
-
-** Better user management **
-- Added confirmation before logging out
-- A link to reset your password
-
-** General **
-- Add app shortcuts for Nougat
-- More explicit titles thoughout the app
-- Cleaner allergen detection settings, and fixed an issue in allergen detection
-
-** Bug fixing **
-- Fix for TLS issue on Nougat (tbm)
-
-** History **
-- You can now delete items from your scan history. Note that your scan history always stays on your device.
-- Your scan history is now timestamped.
-
-0.7.2 & 0.7.3 & 0.7.4 - 
-- Micro-release to fix 4.0 related bugs.
-
-0.7.1 - 
-
-- German, Serbian translations
-- Added support for fl oz and cl units
-- Added the scan button in the product view, for quicker scanning
-- Added support for Open Beauty Facts
-- Provided a rounded icon for Nougat devices which support it
-- Capitalized additives (thanks NasiaKouts :-)
-- Changed menu icons for better legibility (thanks ChasakisD and @mikeh)
-
-0.7 - Mar 12 2017
-- Ability to add more photos to existing products
-- Ability to add front, ingredient and nutrition photos to existing products
-- New icon
-- Various library updates 
-
-0.6.2 - Mar 5 2017
-- Even faster scan experience for new products: no more annoying popups, we jump straight to the new product page
-- Fix upload problems when starting with the nutrition image
-
-0.6.1 - Mar 5 2017
-- Fixes for the additives loading
-
-0.6 - Mar 3 2017
-
-- Translation updates: Romanian, Italian, Galician, Hebrew, German, Japanese, Russian
-- The total number of results is displayed when you search a product, and you get infinite results that load as you scroll
-- More harmonization with the website (color scheme)
-- Added smaller nutrients to the full nutrition table when they are available (eg waters, baby products…)
-- New appearence for the UK traffic lights: more compact, more legible
-- Under the hood: switch to a new ORM that improves reliability
-
-0.5 - Jan 12 2017
-
-- Quick View : a new way to quickly get info (including the Nutriscore) about several products in a row, and easily add them to Open Food Facts if they don't exist. Thanks to @itchix
-- Better search, from everywhere: Search now includes brand, weight, and images are better looking. Plus you can now search from anywhere in the app. @herau
-- Better UX: the UX has materially improved thanks to @herau. It matches the web version. This is our first take at following the Material design spec. Espect even more refinements in the next release.
-- Lighter: the APK is 2MB lighter. Yes lighter :-)
-- Vectorization: most assets are now vector based, which means that they'll look a little crisper, whatever your screen resolution.
-- Bug squashing: the app won't send the units if you don't have time to fill the weight.
-- History export: the history is now exported in your Downloads folder, for easier access. Download folder, but it NEVER leaves your device. It's yours. You can keep scanning your Nutella jar collection :-)
-
-0.4 - Jan 7 2017
-
-- Full nutrition table
-- Better search, now with brand and weight.
-- Labels, certifications and awards, Origin of the ingredients as well as the carbon footprint are now displayed when available
-- You can manage your Open Food Facts contributor account right from the app.
-- You can access your contributions easily using… "Your contributions"
-- You can now logout easily if you feel the need to (and just to be clear, we don't send personal info on the server)
-- You are now shown new products right after you add them, so that you can complete them easily.
-- Wording fixes, layout fixes, various bugfixes (including some nasty crashes, brands being displayed as stores, weight now properly saved)
-- Other 33 languages now available ! Help others access food facts in their native language.
-
-0.3 - Nov 10 2016
-
-- Discover Open Food Facts and learn how to contribute (webview)
-- You can now create an account from the app (webview)
-- You can now easily edit a product right from the app (webview)
-- Settings are now in the sidebar
-- Various bugfixes
-
-0.2.7 - Oct 9 2016
-
-- You can export your scan history to CSV
-- Various bugfixes
-
-0.2.6 - Oct 7 2016
-
-- Fix an issue with allergens alert
-- Various bugfixes
-
-0.2.5 - Sep 29 2016
-- Various bugfixes
-
-0.2.4 - July 2 2016
-- Various bugfixes
-
-0.2.3 - May 28 2016
-- Various bugfixes
-
-0.2.2 - May 15 2016
-- Various bugfixes
-0.2.1 - May 10 2016
-- Various bugfixes
-
-0.2 - May 9 2016
-
-0.1.12.1 - 27 Apr 2016
-
-0.1.12 - 25 Apr 2016
-
-0.1.11 - 23 Apr 2016
-
-0.1.10.2 - 20 Apr 2016
-
-0.1.10.1 - 20 Apr 2016
-
-0.1.2 - 20 Apr 2016
-
-0.1.9.1 - 19 Apr 2016
-
-0.1.9 - 18 Apr 2016
-
-0.1.8 - 18 Apr 2016
-
-0.1.7 - 17 Apr 2016
-
-0.1.6 - 16 Apr 2016
-
-0.1.5 - 1 Jul 2015
-
-0.1.4 - 30 Jun 2015
-
-0.1.3 - 20 Jun 2015
-
-0.1.2 - 20 Jun 2015
-
-0.1.1 - 12 May 2015
-
-0.1 - 10 May 2015
-
-1.0 - 6 May 2015 - Initial release
-
-To be sorted:
-- library updates
-- You can now change the language of Open Food Facts, independantly of your system.
-- Support for HTTPS
-- Add a link to install Open Beauty Facts if you don't have it yet.
-- You can start scanning automatically when you open the app (option in settings)
+# Changelog
+
+## [3.7.0](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/compare/v3.6.8...v3.7.0) (2021-10-26)
+
+
+### Features
+
+* add analytics opt in in welcome screen ([94ae339](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/94ae3390ba37bdb90152fcfa2308ceb3372f599e))
+* add dokka to build.gradle.kts ([8253e3a](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/8253e3a3c33b28547fccc030f3a1b9bad72514b7))
+* Add history refreshing [[#3162](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3162)] ([#3840](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3840)) ([4740512](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/474051221609ecac198ce1f6fa5a9f25c6249ea8))
+* Add simple scan feature ([#4236](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4236)) ([dd59827](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/dd598272e6c32da7a816dabcaad2480ea1887591))
+* added attribute fragment to OBF product view ([8665bc6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/8665bc6dd1789bc4241e706e754630d7a96752bf))
+* added share button to list activity ([ceaf143](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ceaf143499fb4719d41b8fbceea930930c454f32))
+* brand autosuggest added ([#3883](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3883)) ([c558f1b](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/c558f1b29de9a8fcfaebb26b4ff62d41de505abd))
+* confirmation added when setting a photo from photos tab ([#3870](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3870)) ([ae3498f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ae3498f2fa10a5b62a326e5e39d9738bf97333fe))
+* do not show the changelogtranslation prompt in English ([#3862](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3862)) ([b9d5fd1](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/b9d5fd1dd32b4e1d6a34423f4898cce6c444e2cc))
+* implemented SearchComplete ([b33dadb](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/b33dadbdf81ca4b210e3d03fdbab981a881d4c2e))
+* matomo analytics ([#3888](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3888)) ([0952459](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/09524592a32a76990e518930936e2011187d793e))
+* use basic auth for dev OFF server ([4b404de](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/4b404de7f093872be927e1df2da300d8f40c24a6))
+* use lc when querying server. ([2d9add6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/2d9add64874eb6bbb1249f828804659336adfc6d))
+
+
+### Bug Fixes
+
+* add @ExperimentalTime ([89713c1](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/89713c1785b7f9029755af5a4b3ba27e6eb7b00a))
+* add custom tab query to AndroidManifest.xml ([211c96e](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/211c96e93eee614ab2efd0e1ad00e4a05fb407c7))
+* add exception to per100gInUnit and perServingInUnit in ProductNutriment ([783ba34](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/783ba3431088b8d07f8ef792c0c1875e7058f295))
+* add product to history correctly ([0191fe7](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/0191fe7c8b77943ee3a18e6f72bf4cdab0a69d3b))
+* add product to history correctly ([354adbf](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/354adbfccd2c125cf3059f2dfdd464659484f618))
+* add sentry reporting if URI in null when saving file in ScanHistoryActivity ([d1d0f81](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/d1d0f81fac23da98afe4620c8bd8fef0983b909a))
+* added contrast to matomo slide ([5825414](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/5825414c4cc96ea19604cc58f5ba7cbf8c7911cc))
+* additive visibility issue solved ([#3871](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3871)) ([287435b](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/287435bc68d7e096e737eefa5f3aa5e94966c8b4))
+* allergens alerts ([8c40df2](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/8c40df2d42948d6a666a72592574183f6d6883fa))
+* AllergenTest ([#4146](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4146)) ([ccd5da9](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ccd5da9e6623a678d555d006dfcdc00d34628ddf))
+* ANR caused by sync call to isEmpty() ([32d69fc](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/32d69fc0b41a226a4b300fdd3b54e261ac4c0c2b))
+* bad clipping for questions [#2525](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/2525) ([#3939](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3939)) ([fd51979](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/fd51979bc2e3fdc25e21ef2ccc5c14b46d69bd62))
+* bad clipping in "too bad" button in fragment_add_product_ingredients.xml ([6b5407d](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/6b5407dc046ef6af2c359d6abb9de3acca6ca1d8))
+* bold allergens in ingredients list ([b11db2c](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/b11db2c9d721c208df2e4c769023f88445f0d47f))
+* bold labels in SummaryProductFragment.kt, ([b11db2c](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/b11db2c9d721c208df2e4c769023f88445f0d47f))
+* bug with spinner for vitamin_a in ProductEditNutritionFactsFragment ([#3821](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3821)) ([c0c11ce](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/c0c11ce66206d3dbe99d1184a62f4c0e110f214b))
+* categories activity crash ([8034ee0](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/8034ee03b218cb0f34ed45cabf9f13fb3baa5e5d))
+* categories did not have a link in CategoryProductHelper.kt ([84bfb42](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/84bfb428eabe486e3eda5c15f8b1aa54fc6d2c39))
+* changing the OS locale doesn't change the app locale ([#4323](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4323)) ([965b4ba](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/965b4bad4939da7d2d39534b6ca0a9fba9f4c0a3))
+* check for nullability in SummaryProductFragment#resetScroll ([ff86941](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ff86941d3296ac4393c66b471b853578ef329b42))
+* compare button click ([#4147](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4147)) ([15d1498](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/15d14985efdce5a0751f0bd91b9d25302ba04af7))
+* disable CSV import for older android versions ([c06c049](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/c06c049640c057d34b83fda8a5ecfae77ae86755))
+* disable serving size field if fetched value is wrong ([43b933f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/43b933f5193fa666daff46be05ec0b110a54f2a4))
+* display additive name ([87c8c2f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/87c8c2fbaee9dfa83019e3b8d693b6bde630c93a))
+* display analysis tags always in the same order in Summary Product Fragment ([7cdea9c](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/7cdea9c4f1da30ff5c7f7a1699d247ec1a1d04f3))
+* do not access binding if cancelled ([185b559](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/185b5599e4a33fb55d04dd5ab4a03c924fcad09a))
+* do not concatenate labels without separators ([d24907c](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/d24907c785afd3ba0fc14dcad8f2953c1450bd2e))
+* do not save null values in DB. ([5b22cc2](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/5b22cc26fe9170f69f0538f03a5fd75a0f543847))
+* do not try to refresh if activity is not ProductViewActivity ([32e9f0d](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/32e9f0dc9f2d739711f328c97b378b9af29a71dd))
+* do not update products when history is empty ([20f8a03](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/20f8a038bf6e78ec134574a6dd2b084dfbe83315))
+* do not use ChangelogDialog sharedPrefs before fragment attach ([7f637bc](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/7f637bc3bb83116eb620d5d781f15c0ca88413b3))
+* don't replace fragment on another fragment if they are the same ([#3835](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3835)) ([97624bd](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/97624bd46a4e80b9742607a6635ef22a7b791101))
+* editing in allergens alert screen ([#4215](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4215)) ([9ae13b6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/9ae13b61f81f3f87507550ebeef85ec8887b8a88))
+* error in value per 100g parsing ([f0e4a28](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/f0e4a28d9248f79cbdc2e19616224a6c4bde7ff3))
+* fix develop branch ([#3899](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3899)) ([88e3d18](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/88e3d184c9b619ed68e7f697ef774a1c55e4f729))
+* fixed historyproduct not being added ([1b39563](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1b3956398d8f81838d7a9f2fd67a0a2b53f5c906))
+* fixed isBarcodeValid method in ProductUtilsTest.kt ([5025f55](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/5025f55d72383d44be758a43f09c7eec1b2f0de1))
+* fixed long text layout issue ([#3727](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3727)) ([101989f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/101989f7b265edee7776ae986884d209c0ae1167))
+* fixed matomo tracking opted-out users ([2dcc1c8](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/2dcc1c8925e6226602813063591ecc51e4d4f00a))
+* fixed NPE in ProductEditNutritionFactsFragment.kt ([ecc5047](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ecc504779d6b0a586436dc140690bceb6ee77dea))
+* fixed ProductsAPITest.kt ([97653bd](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/97653bd4c586630e5c1d6c4e2791e59347f08d9f))
+* fixed tagline request ([1b39563](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1b3956398d8f81838d7a9f2fd67a0a2b53f5c906))
+* fixed Unit Tests using robolectric ([2d9add6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/2d9add64874eb6bbb1249f828804659336adfc6d))
+* fixes [#3887](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3887) ([#3968](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3968)) ([60dd8d6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/60dd8d6edc975632023ad6a54248b946780418dc))
+* labels are not rendered as links in SummaryProductFragment.kt ([c4a5314](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/c4a5314a3078434a9fbfdd856a3bc78d94649505))
+* LoginActivity with null arg ([1b39563](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1b3956398d8f81838d7a9f2fd67a0a2b53f5c906))
+* made tag-line method suspend ([462397f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/462397fd2ef6711b1da1ac65228ae9ed99eba6c1))
+* make toast in main context ([03f504f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/03f504fa54b65f271c7b9537c22408ea81c0e647))
+* minors ([40757e6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/40757e6e654b846ff3a0c4d259fc61cc08f28dbf))
+* not working language selection  ([#4192](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4192)) ([7caa086](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/7caa0866f765c26505df96712b8db9a9687b4e85))
+* NPE in EditOverviewFragment ([#4298](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4298)) ([94df3cc](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/94df3ccb80ea8b42e24a065185ab13876d35c965))
+* NPE in PhotoReceiverHandler.kt ([1783857](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1783857ea2a9aa68a1171cd89a76462a9ef28518))
+* NPE in ProductEditNutritionFactsFragment ([#3861](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3861)) ([43b9850](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/43b98508fd4f97d3fd8388d61a56f2e26791ca60))
+* NPE in refreshProductCount on HomeFragment ([#4237](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4237)) ([40a8f2d](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/40a8f2d96aa01cffb69bdef0c5f7bf2c003fbd9e))
+* NPE in WikidataAPIClient ([ec8a0da](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ec8a0da784a81a2d0c223c2652ae4340f0abe025))
+* NPE on ProductEditNutritionFactsFragment.kt init ([78ac2b3](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/78ac2b3d816c7c0b64a8d9c8bd0707367eb03a5c))
+* NPE on user search ([bbdb6a3](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/bbdb6a3ad8c2b5c25180ebea5a9ad31fd13f936b))
+* NPE when image url is not given ([#3863](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/3863)) ([87b4bd7](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/87b4bd78c9a36ec2466d437f2288af64ba3150fb))
+* product сomparison ([#4177](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4177)) ([76e189e](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/76e189e39e3ea37e7b7639ad744025d20b131ed1))
+* properties order in AnalysisTag Entity ([1111c73](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1111c735681589ac9937f488d522796f8d1a0545))
+* query attribute_groups only for the actual UI language. ([6b7cb63](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/6b7cb63d816103e73ee4cb82008474cc6bacef8b))
+* refactored measurements inner working ([#4171](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4171)) ([ba334af](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ba334af496d6017c7e33afae60cb94521a925d32))
+* remove deprecated _instance ([e738e54](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/e738e540fef334cbaa102a526cc26f8dc72b5455))
+* remove runBlocking in ProductListAdapter.kt ([bc2d218](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/bc2d2183cfe644d7e6c9b06b646ab0d53422afaa))
+* remove runBlocking in ProductListAdapter.kt ([7c195cf](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/7c195cf36f3c835998627e7f71087bd926ffc0de))
+* removed nutriscore icon in obf ([e3e0ee3](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/e3e0ee3e6662682b58d69aac252814ec44fc4713))
+* replace custom OK with android default resource ([87ebf0f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/87ebf0f83c2742a2bca3cab31790604c50054aa1))
+* replaced launch with launchWhenResumed in SummaryProductFragment ([a6b3161](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/a6b316160c1f35a2f74ed8d7a9b932fe780f6199))
+* resources for other flavors in WelcomeScreen ([9ac2dbc](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/9ac2dbc901e2a4091dee4f7ba2df089ff6cf1508))
+* show language name in picker for product edit screen ([#4149](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4149)) ([1717394](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1717394b2bdc7ac709bbe4f9856d2a32be8b9da3))
+* show product not found in main thread ([1682f89](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/1682f8967c94b7f83a4e32d11e669350ea45962e))
+* show tagline in HomeFragment ([ad45456](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/ad45456696d15c0c5c93f032638659cf165790bf))
+* temporary fix for URI blocking issue. ([5e3322f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/5e3322fe7350d5c866ed7405c18e8e1a58ebf1e8))
+* thread errors when modifying view ([7cf2bf6](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/7cf2bf6b983a49d35efc390308036cd041bf9d8d))
+* typo in variable usage in EditIngredientsFragment.kt ([389bf33](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/389bf33a2894672e82ee6e3358da17042dfcdaa1))
+* use [@string](https://www.github.com/string) resource in welcome_slide4.xml ([6aecf7f](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/6aecf7fc5f8adfde35411fc54c3b12597b30e1ba))
+* use coroutines and livedata for SplashActivity.kt. Fixes ANR. ([f7d6854](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/f7d685483d75e2b8b548d7d5e743073f9e9133de))
+* use resource for "State" subtitle in ProductSearchActivity.kt ([32add9a](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/32add9a4224ff069bbf25c9df7dd6a687d109bd7))
+* user not prompted to login when trying to edit a product ([732777e](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/732777e348083d36fbcc21a1bba64d51ef215f12))
+* When no further fragment is visible, the app should close itself ([#4322](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4322)) ([8ae0954](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/8ae095459e45d8dbebe3e243a5968b983fbf565a)), closes [#4320](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/issues/4320)
+* workaround for NPE in ImagesManageActivity.kt ([fed1f54](https://www.github.com/openfoodfacts/openfoodfacts-androidapp/commit/fed1f541064a4f0c8621aca75b4508909658b8fe))
